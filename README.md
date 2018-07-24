@@ -1,2 +1,2 @@
 # Hands-On-DevOps-for-Architects
-Hands-On DevOps for Architects, published by Packt
+# The code for this repository is under development
