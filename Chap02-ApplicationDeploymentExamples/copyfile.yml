@@ -1,0 +1,9 @@
+---
+- hosts: web
+  tasks:
+    - copy:
+        src: /home/vagrant/myArtifactID.war
+        dest: /home/vagrant/wildfly/standalone/deployments
+        owner: vagrant
+        group: vagrant
+        mode: 0644

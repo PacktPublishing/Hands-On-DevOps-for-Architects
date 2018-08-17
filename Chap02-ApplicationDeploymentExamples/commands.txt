@@ -1,0 +1,7 @@
+sha1sum myArtifactID.war > mySHA1.txt
+sha1sum -c mySHA1.txt
+scp myArtifactID.war vagrant@web:/home/vagrant/wildfly/standalone/deployments
+scp mySHA1.txt vagrant@web:/home/vagrant/wildfly/standalone/deployments
+/usr/bin/ssh vagrant@web "cd /home/vagrant/wildfly/standalone/deployments; /usr/bin/sha1sum -c /home/vagrant/wildfly/standalone/deployments/mySHA1.txt > /home/vagrant/mySHA1.results"
+scp vagrant@web:/home/vagrant/mySHA1.results .
+cat mySHA1.results
