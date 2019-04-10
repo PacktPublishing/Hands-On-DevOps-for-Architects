@@ -1,0 +1,14 @@
+#Example Dockerfile which creates an image based upon ubuntu:14.04
+#Bob Aiello
+
+FROM ubuntu:14.04
+
+RUN apt-get update && apt-get install -y \
+            python-dev \
+            build-essential
+
+RUN /bin/mkdir /app
+
+COPY myapp.py /app
+
+CMD /usr/bin/python /app/myapp.py
