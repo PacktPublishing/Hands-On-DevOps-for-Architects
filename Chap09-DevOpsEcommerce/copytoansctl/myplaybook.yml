@@ -1,0 +1,14 @@
+---
+- hosts: web db
+  tasks:
+      - name: Copy file with owner and permissions
+        copy:
+          src: /tmp/installcomponent.sh
+          dest: /tmp
+          owner: vagrant
+          group: vagrant
+          mode: '0755'
+      - name: Run a script
+        script: /tmp/installcomponent.sh
+        args:
+          executable: /tmp/installcomponent.sh
