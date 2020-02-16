@@ -11,14 +11,12 @@ will use as an Ansible controller (which we call ansctl).
 We connect the Ansible controller node:
 vagrant ssh ansctl
 
-
 From the ansible node we can install Ansible
-sudo apt-get update
-sudo apt-get install software-properties-common
-sudo apt-add-repository ppa:ansible/ansible
-sudo apt-get update
-sudo apt-get install ansible
-
+sudo apt-get -y update
+sudo apt-get -y install software-properties-common
+sudo apt-add-repository -y ppa:ansible/ansible
+sudo apt-get -y update
+sudo apt-get -y install ansible
 
 You can use the ssh-keygen command to create your private/public keypair which
 we will then use to connect to the other nodes.
