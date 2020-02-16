@@ -1,6 +1,9 @@
 # Hands-On-DevOps-for-Architects
 # The code for this repository is under development
 
+Download and install Vagrant (which on Windows requires Oracle Virtual box)
+https://www.vagrantup.com/downloads.html
+
 Place the Vagrantfile into a an empty directory and then issue the vagrant up
 command. Once the vagrant environment is provisioned you connect to the node we
 will use as an Ansible controller (which we call ansctl).
