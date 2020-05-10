@@ -1,0 +1,13 @@
+{
+  "name": "mynode_example1",
+  "version": "1.0.0",
+  "description": "Example Node.js",
+  "author": "Bob Aiello",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
